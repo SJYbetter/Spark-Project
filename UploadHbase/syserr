@@ -1,0 +1,212 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+18/11/30 15:21:20 WARN Utils: Your hostname, moo-Inspiron-7560 resolves to a loopback address: 127.0.1.1; using 10.110.102.85 instead (on interface wlp2s0)
+18/11/30 15:21:20 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+18/11/30 15:21:21 INFO SparkContext: Running Spark version 2.3.1
+18/11/30 15:21:23 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/11/30 15:21:24 INFO SparkContext: Submitted application: UploadHbase
+18/11/30 15:21:25 INFO SecurityManager: Changing view acls to: moo
+18/11/30 15:21:25 INFO SecurityManager: Changing modify acls to: moo
+18/11/30 15:21:25 INFO SecurityManager: Changing view acls groups to: 
+18/11/30 15:21:25 INFO SecurityManager: Changing modify acls groups to: 
+18/11/30 15:21:25 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(moo); groups with view permissions: Set(); users  with modify permissions: Set(moo); groups with modify permissions: Set()
+18/11/30 15:21:26 INFO Utils: Successfully started service 'sparkDriver' on port 38803.
+18/11/30 15:21:26 INFO SparkEnv: Registering MapOutputTracker
+18/11/30 15:21:26 INFO SparkEnv: Registering BlockManagerMaster
+18/11/30 15:21:26 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+18/11/30 15:21:26 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+18/11/30 15:21:26 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-a0eb5153-b2a2-4040-91db-76386c27776c
+18/11/30 15:21:26 INFO MemoryStore: MemoryStore started with capacity 870.9 MB
+18/11/30 15:21:26 INFO SparkEnv: Registering OutputCommitCoordinator
+18/11/30 15:21:27 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+18/11/30 15:21:28 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://10.110.102.85:4040
+18/11/30 15:21:28 INFO Executor: Starting executor ID driver on host localhost
+18/11/30 15:21:28 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 42477.
+18/11/30 15:21:28 INFO NettyBlockTransferService: Server created on 10.110.102.85:42477
+18/11/30 15:21:28 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+18/11/30 15:21:28 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.110.102.85, 42477, None)
+18/11/30 15:21:28 INFO BlockManagerMasterEndpoint: Registering block manager 10.110.102.85:42477 with 870.9 MB RAM, BlockManagerId(driver, 10.110.102.85, 42477, None)
+18/11/30 15:21:28 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.110.102.85, 42477, None)
+18/11/30 15:21:28 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.110.102.85, 42477, None)
+18/11/30 15:21:29 INFO EventLoggingListener: Logging events to file:/tmp/spark-events/local-1543609288411
+18/11/30 15:21:30 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 307.4 KB, free 870.6 MB)
+18/11/30 15:21:30 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 26.0 KB, free 870.6 MB)
+18/11/30 15:21:30 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.110.102.85:42477 (size: 26.0 KB, free: 870.9 MB)
+18/11/30 15:21:30 INFO SparkContext: Created broadcast 0 from newAPIHadoopFile at UploadHbaseMain.scala:24
+18/11/30 15:21:32 INFO RecoverableZooKeeper: Process identifier=hconnection-0x5980fa73 connecting to ZooKeeper ensemble=localhost:2181
+18/11/30 15:21:32 INFO ZooKeeper: Client environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT
+18/11/30 15:21:32 INFO ZooKeeper: Client environment:host.name=moo-Inspiron-7560
+18/11/30 15:21:32 INFO ZooKeeper: Client environment:java.version=1.8.0_181
+18/11/30 15:21:32 INFO ZooKeeper: Client environment:java.vendor=Oracle Corporation
+18/11/30 15:21:32 INFO ZooKeeper: Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
+18/11/30 15:21:32 INFO ZooKeeper: Client environment:java.class.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/cldrdata.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/dnsns.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/icedtea-sound.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jaccess.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/java-atk-wrapper.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/localedata.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/nashorn.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunec.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunjce_provider.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/zipfs.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/management-agent.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/home/moo/Git/Big-Hero/UploadHbase/target/scala-2.11/classes:/home/moo/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/home/moo/.ivy2/cache/xmlenc/xmlenc/jars/xmlenc-0.52.jar:/home/moo/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.3.04.jar:/home/moo/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.9.1.jar:/home/moo/.ivy2/cache/tomcat/jasper-runtime/jars/jasper-runtime-5.5.23.jar:/home/moo/.ivy2/cache/tomcat/jasper-compiler/jars/jasper-compiler-5.5.23.jar:/home/moo/.ivy2/cache/oro/oro/jars/oro-2.0.8.jar:/home/moo/.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.1.2.6.jar:/home/moo/.ivy2/cache/org.tukaani/xz/jars/xz-1.0.jar:/home/moo/.ivy2/cache/org.spark-project.spark/unused/jars/unused-1.0.0.jar:/home/moo/.ivy2/cache/org.sonatype.sisu.inject/cglib/jars/cglib-2.2.1-v20090111.jar:/home/moo/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.16.jar:/home/moo/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar:/home/moo/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.16.jar:/home/moo/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.16.jar:/home/moo/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.4.jar:/home/moo/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/moo/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.11.8.jar:/home/moo/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.8.jar:/home/moo/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar:/home/moo/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.11.8.jar:/home/moo/.ivy2/cache/org.roaringbitmap/RoaringBitmap/bundles/RoaringBitmap-0.5.11.jar:/home/moo/.ivy2/cache/org.ow2.asm/asm/jars/asm-5.0.4.jar:/home/moo/.ivy2/cache/org.objenesis/objenesis/jars/objenesis-2.1.jar:/home/moo/.ivy2/cache/org.mortbay.jetty/servlet-api-2.5/jars/servlet-api-2.5-6.1.14.jar:/home/moo/.ivy2/cache/org.mortbay.jetty/jsp-api-2.1/jars/jsp-api-2.1-6.1.14.jar:/home/moo/.ivy2/cache/org.mortbay.jetty/jsp-2.1/jars/jsp-2.1-6.1.14.jar:/home/moo/.ivy2/cache/org.mortbay.jetty/jetty-util/jars/jetty-util-6.1.26.jar:/home/moo/.ivy2/cache/org.mortbay.jetty/jetty-sslengine/jars/jetty-sslengine-6.1.26.jar:/home/moo/.ivy2/cache/org.mortbay.jetty/jetty/jars/jetty-6.1.26.jar:/home/moo/.ivy2/cache/org.lz4/lz4-java/jars/lz4-java-1.4.0.jar:/home/moo/.ivy2/cache/org.json4s/json4s-jackson_2.11/jars/json4s-jackson_2.11-3.2.11.jar:/home/moo/.ivy2/cache/org.json4s/json4s-core_2.11/jars/json4s-core_2.11-3.2.11.jar:/home/moo/.ivy2/cache/org.json4s/json4s-ast_2.11/jars/json4s-ast_2.11-3.2.11.jar:/home/moo/.ivy2/cache/org.jruby.joni/joni/jars/joni-2.1.2.jar:/home/moo/.ivy2/cache/org.jruby.jcodings/jcodings/jars/jcodings-1.0.8.jar:/home/moo/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.1-GA.jar:/home/moo/.ivy2/cache/org.jamon/jamon-runtime/jars/jamon-runtime-2.4.1.jar:/home/moo/.ivy2/cache/org.htrace/htrace-core/jars/htrace-core-3.0.4.jar:/home/moo/.ivy2/cache/org.hsqldb/hsqldb/jars/hsqldb-2.0.0.jar:/home/moo/.ivy2/cache/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.3.jar:/home/moo/.ivy2/cache/org.glassfish.jersey.media/jersey-media-jaxb/jars/jersey-media-jaxb-2.22.2.jar:/home/moo/.ivy2/cache/org.glassfish.jersey.core/jersey-server/jars/jersey-server-2.22.2.jar:/home/moo/.ivy2/cache/org.glassfish.jersey.core/jersey-common/jars/jersey-common-2.22.2.jar:/home/moo/.ivy2/cache/org.glassfish.jersey.core/jersey-client/jars/jersey-client-2.22.2.jar:/home/moo/.ivy2/cache/org.glassfish.jersey.containers/jersey-container-servlet-core/jars/jersey-container-servlet-core-2.22.2.jar:/home/moo/.ivy2/cache/org.glassfish.jersey.containers/jersey-container-servlet/jars/jersey-container-servlet-2.22.2.jar:/home/moo/.ivy2/cache/org.glassfish.jersey.bundles.repackaged/jersey-guava/bundles/jersey-guava-2.22.2.jar:/home/moo/.ivy2/cache/org.glassfish.hk2.external/javax.inject/jars/javax.inject-2.4.0-b34.jar:/home/moo/.ivy2/cache/org.glassfish.hk2.external/aopalliance-repackaged/jars/aopalliance-repackaged-2.4.0-b34.jar:/home/moo/.ivy2/cache/org.glassfish.hk2/osgi-resource-locator/jars/osgi-resource-locator-1.0.1.jar:/home/moo/.ivy2/cache/org.glassfish.hk2/hk2-utils/jars/hk2-utils-2.4.0-b34.jar:/home/moo/.ivy2/cache/org.glassfish.hk2/hk2-locator/jars/hk2-locator-2.4.0-b34.jar:/home/moo/.ivy2/cache/org.glassfish.hk2/hk2-api/jars/hk2-api-2.4.0-b34.jar:/home/moo/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.8.jar:/home/moo/.ivy2/cache/org.codehaus.jettison/jettison/bundles/jettison-1.1.jar:/home/moo/.ivy2/cache/org.codehaus.janino/janino/jars/janino-3.0.8.jar:/home/moo/.ivy2/cache/org.codehaus.janino/commons-compiler/jars/commons-compiler-3.0.8.jar:/home/moo/.ivy2/cache/org.codehaus.jackson/jackson-xc/jars/jackson-xc-1.9.13.jar:/home/moo/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/jars/jackson-mapper-asl-1.9.13.jar:/home/moo/.ivy2/cache/org.codehaus.jackson/jackson-jaxrs/jars/jackson-jaxrs-1.9.13.jar:/home/moo/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/jars/jackson-core-asl-1.9.13.jar:/home/moo/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.52.jar:/home/moo/.ivy2/cache/org.apache.zookeeper/zookeeper/jars/zookeeper-3.4.10.jar:/home/moo/.ivy2/cache/org.apache.xbean/xbean-asm5-shaded/bundles/xbean-asm5-shaded-4.4.jar:/home/moo/.ivy2/cache/org.apache.spark/spark-unsafe_2.11/jars/spark-unsafe_2.11-2.3.1.jar:/home/moo/.ivy2/cache/org.apache.spark/spark-tags_2.11/jars/spark-tags_2.11-2.3.1.jar:/home/moo/.ivy2/cache/org.apache.spark/spark-sql_2.11/jars/spark-sql_2.11-2.3.1.jar:/home/moo/.ivy2/cache/org.apache.spark/spark-sketch_2.11/jars/spark-sketch_2.11-2.3.1.jar:/home/moo/.ivy2/cache/org.apache.spark/spark-network-shuffle_2.11/jars/spark-network-shuffle_2.11-2.3.1.jar:/home/moo/.ivy2/cache/org.apache.spark/spark-network-common_2.11/jars/spark-network-common_2.11-2.3.1.jar:/home/moo/.ivy2/cache/org.apache.spark/spark-launcher_2.11/jars/spark-launcher_2.11-2.3.1.jar:/home/moo/.ivy2/cache/org.apache.spark/spark-kvstore_2.11/jars/spark-kvstore_2.11-2.3.1.jar:/home/moo/.ivy2/cache/org.apache.spark/spark-core_2.11/jars/spark-core_2.11-2.3.1.jar:/home/moo/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/jars/spark-catalyst_2.11-2.3.1.jar:/home/moo/.ivy2/cache/org.apache.parquet/parquet-jackson/jars/parquet-jackson-1.8.3.jar:/home/moo/.ivy2/cache/org.apache.parquet/parquet-hadoop/jars/parquet-hadoop-1.8.3.jar:/home/moo/.ivy2/cache/org.apache.parquet/parquet-format/jars/parquet-format-2.3.1.jar:/home/moo/.ivy2/cache/org.apache.parquet/parquet-encoding/jars/parquet-encoding-1.8.3.jar:/home/moo/.ivy2/cache/org.apache.parquet/parquet-common/jars/parquet-common-1.8.3.jar:/home/moo/.ivy2/cache/org.apache.parquet/parquet-column/jars/parquet-column-1.8.3.jar:/home/moo/.ivy2/cache/org.apache.orc/orc-mapreduce/jars/orc-mapreduce-1.4.4-nohive.jar:/home/moo/.ivy2/cache/org.apache.orc/orc-core/jars/orc-core-1.4.4-nohive.jar:/home/moo/.ivy2/cache/org.apache.ivy/ivy/jars/ivy-2.4.0.jar:/home/moo/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.4.4.jar:/home/moo/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.5.2.jar:/home/moo/.ivy2/cache/org.apache.htrace/htrace-core4/jars/htrace-core4-4.0.1-incubating.jar:/home/moo/.ivy2/cache/org.apache.htrace/htrace-core/jars/htrace-core-3.1.0-incubating.jar:/home/moo/.ivy2/cache/org.apache.hbase/hbase-server/jars/hbase-server-1.4.8.jar:/home/moo/.ivy2/cache/org.apache.hbase/hbase-protocol/jars/hbase-protocol-1.4.8.jar:/home/moo/.ivy2/cache/org.apache.hbase/hbase-procedure/jars/hbase-procedure-1.4.8.jar:/home/moo/.ivy2/cache/org.apache.hbase/hbase-prefix-tree/jars/hbase-prefix-tree-1.4.8.jar:/home/moo/.ivy2/cache/org.apache.hbase/hbase-common/jars/hbase-common-1.4.8.jar:/home/moo/.ivy2/cache/org.apache.hbase/hbase-client/jars/hbase-client-1.4.8.jar:/home/moo/.ivy2/cache/org.apache.hbase/hbase-annotations/jars/hbase-annotations-1.4.8.jar:/home/moo/.ivy2/cache/org.apache.hadoop/hadoop-yarn-server-nodemanager/jars/hadoop-yarn-server-nodemanager-2.8.4.jar:/home/moo/.ivy2/cache/org.apache.hadoop/hadoop-yarn-server-common/jars/hadoop-yarn-server-common-2.8.4.jar:/home/moo/.ivy2/cache/org.apache.hadoop/hadoop-yarn-common/jars/hadoop-yarn-common-2.8.4.jar:/home/moo/.ivy2/cache/org.apache.hadoop/hadoop-yarn-client/jars/hadoop-yarn-client-2.8.4.jar:/home/moo/.ivy2/cache/org.apache.hadoop/hadoop-yarn-api/jars/hadoop-yarn-api-2.6.5.jar:/home/moo/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/jars/hadoop-mapreduce-client-shuffle-2.8.4.jar:/home/moo/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-jobclient/jars/hadoop-mapreduce-client-jobclient-2.8.4.jar:/home/moo/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/jars/hadoop-mapreduce-client-core-2.8.4.jar:/home/moo/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/jars/hadoop-mapreduce-client-common-2.8.4.jar:/home/moo/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-app/jars/hadoop-mapreduce-client-app-2.6.5.jar:/home/moo/.ivy2/cache/org.apache.hadoop/hadoop-hdfs/jars/hadoop-hdfs-2.6.5.jar:/home/moo/.ivy2/cache/org.apache.hadoop/hadoop-common/jars/hadoop-common-2.8.4.jar:/home/moo/.ivy2/cache/org.apache.hadoop/hadoop-client/jars/hadoop-client-2.6.5.jar:/home/moo/.ivy2/cache/org.apache.hadoop/hadoop-auth/jars/hadoop-auth-2.8.4.jar:/home/moo/.ivy2/cache/org.apache.hadoop/hadoop-annotations/jars/hadoop-annotations-2.8.4.jar:/home/moo/.ivy2/cache/org.apache.directory.server/apacheds-kerberos-codec/bundles/apacheds-kerberos-codec-2.0.0-M15.jar:/home/moo/.ivy2/cache/org.apache.directory.server/apacheds-i18n/bundles/apacheds-i18n-2.0.0-M15.jar:/home/moo/.ivy2/cache/org.apache.directory.api/api-util/bundles/api-util-1.0.0-M20.jar:/home/moo/.ivy2/cache/org.apache.directory.api/api-asn1-api/bundles/api-asn1-api-1.0.0-M20.jar:/home/moo/.ivy2/cache/org.apache.curator/curator-recipes/bundles/curator-recipes-2.7.1.jar:/home/moo/.ivy2/cache/org.apache.curator/curator-framework/bundles/curator-framework-2.7.1.jar:/home/moo/.ivy2/cache/org.apache.curator/curator-client/bundles/curator-client-2.7.1.jar:/home/moo/.ivy2/cache/org.apache.commons/commons-math3/jars/commons-math3-3.4.1.jar:/home/moo/.ivy2/cache/org.apache.commons/commons-math/jars/commons-math-2.2.jar:/home/moo/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.5.jar:/home/moo/.ivy2/cache/org.apache.commons/commons-crypto/jars/commons-crypto-1.0.0.jar:/home/moo/.ivy2/cache/org.apache.commons/commons-compress/jars/commons-compress-1.4.1.jar:/home/moo/.ivy2/cache/org.apache.avro/avro-mapred/jars/avro-mapred-1.7.7-hadoop2.jar:/home/moo/.ivy2/cache/org.apache.avro/avro-ipc/jars/avro-ipc-1.7.7-tests.jar:/home/moo/.ivy2/cache/org.apache.avro/avro-ipc/jars/avro-ipc-1.7.7.jar:/home/moo/.ivy2/cache/org.apache.avro/avro/jars/avro-1.7.7.jar:/home/moo/.ivy2/cache/org.apache.arrow/arrow-vector/jars/arrow-vector-0.8.0.jar:/home/moo/.ivy2/cache/org.apache.arrow/arrow-memory/jars/arrow-memory-0.8.0.jar:/home/moo/.ivy2/cache/org.apache.arrow/arrow-format/jars/arrow-format-0.8.0.jar:/home/moo/.ivy2/cache/org.antlr/antlr4-runtime/jars/antlr4-runtime-4.7.jar:/home/moo/.ivy2/cache/net.sf.py4j/py4j/jars/py4j-0.10.7.jar:/home/moo/.ivy2/cache/net.razorvine/pyrolite/jars/pyrolite-4.13.jar:/home/moo/.ivy2/cache/net.minidev/json-smart/bundles/json-smart-2.3.jar:/home/moo/.ivy2/cache/net.minidev/accessors-smart/bundles/accessors-smart-1.2.jar:/home/moo/.ivy2/cache/net.java.dev.jets3t/jets3t/jars/jets3t-0.9.4.jar:/home/moo/.ivy2/cache/net.iharder/base64/jars/base64-2.3.8.jar:/home/moo/.ivy2/cache/log4j/log4j/bundles/log4j-1.2.17.jar:/home/moo/.ivy2/cache/junit/junit/jars/junit-4.12.jar:/home/moo/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.9.jar:/home/moo/.ivy2/cache/jline/jline/jars/jline-0.9.94.jar:/home/moo/.ivy2/cache/javax.xml.stream/stax-api/jars/stax-api-1.0-2.jar:/home/moo/.ivy2/cache/javax.xml.bind/jaxb-api/jars/jaxb-api-2.2.2.jar:/home/moo/.ivy2/cache/javax.ws.rs/javax.ws.rs-api/jars/javax.ws.rs-api-2.0.1.jar:/home/moo/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/moo/.ivy2/cache/javax.servlet.jsp/jsp-api/jars/jsp-api-2.1.jar:/home/moo/.ivy2/cache/javax.servlet/servlet-api/jars/servlet-api-2.5.jar:/home/moo/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.1.0.jar:/home/moo/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/moo/.ivy2/cache/javax.annotation/javax.annotation-api/jars/javax.annotation-api-1.2.jar:/home/moo/.ivy2/cache/javax.activation/activation/jars/activation-1.1.1.jar:/home/moo/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.1.17.Final.jar:/home/moo/.ivy2/cache/io.netty/netty/bundles/netty-3.10.5.Final.jar:/home/moo/.ivy2/cache/io.dropwizard.metrics/metrics-jvm/bundles/metrics-jvm-3.1.5.jar:/home/moo/.ivy2/cache/io.dropwizard.metrics/metrics-json/bundles/metrics-json-3.1.5.jar:/home/moo/.ivy2/cache/io.dropwizard.metrics/metrics-graphite/bundles/metrics-graphite-3.1.5.jar:/home/moo/.ivy2/cache/io.dropwizard.metrics/metrics-core/bundles/metrics-core-3.1.5.jar:/home/moo/.ivy2/cache/io.airlift/aircompressor/jars/aircompressor-0.8.jar:/home/moo/.ivy2/cache/commons-net/commons-net/jars/commons-net-3.1.jar:/home/moo/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.2.jar:/home/moo/.ivy2/cache/commons-lang/commons-lang/jars/commons-lang-2.6.jar:/home/moo/.ivy2/cache/commons-io/commons-io/jars/commons-io-2.4.jar:/home/moo/.ivy2/cache/commons-httpclient/commons-httpclient/jars/commons-httpclient-3.1.jar:/home/moo/.ivy2/cache/commons-el/commons-el/jars/commons-el-1.0.jar:/home/moo/.ivy2/cache/commons-digester/commons-digester/jars/commons-digester-1.8.jar:/home/moo/.ivy2/cache/commons-configuration/commons-configuration/jars/commons-configuration-1.6.jar:/home/moo/.ivy2/cache/commons-collections/commons-collections/jars/commons-collections-3.2.2.jar:/home/moo/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/home/moo/.ivy2/cache/commons-cli/commons-cli/jars/commons-cli-1.2.jar:/home/moo/.ivy2/cache/commons-beanutils/commons-beanutils-core/jars/commons-beanutils-core-1.8.0.jar:/home/moo/.ivy2/cache/commons-beanutils/commons-beanutils/jars/commons-beanutils-1.7.0.jar:/home/moo/.ivy2/cache/com.yammer.metrics/metrics-core/jars/metrics-core-2.2.0.jar:/home/moo/.ivy2/cache/com.vlkan/flatbuffers/jars/flatbuffers-1.2.0-3f79e055.jar:/home/moo/.ivy2/cache/com.univocity/univocity-parsers/jars/univocity-parsers-2.5.9.jar:/home/moo/.ivy2/cache/com.twitter/chill_2.11/jars/chill_2.11-0.8.4.jar:/home/moo/.ivy2/cache/com.twitter/chill-java/jars/chill-java-0.8.4.jar:/home/moo/.ivy2/cache/com.thoughtworks.paranamer/paranamer/bundles/paranamer-2.8.jar:/home/moo/.ivy2/cache/com.sun.xml.bind/jaxb-impl/jars/jaxb-impl-2.2.3-1.jar:/home/moo/.ivy2/cache/com.sun.jersey.contribs/jersey-guice/jars/jersey-guice-1.9.jar:/home/moo/.ivy2/cache/com.sun.jersey/jersey-server/bundles/jersey-server-1.9.jar:/home/moo/.ivy2/cache/com.sun.jersey/jersey-json/bundles/jersey-json-1.9.jar:/home/moo/.ivy2/cache/com.sun.jersey/jersey-core/bundles/jersey-core-1.9.jar:/home/moo/.ivy2/cache/com.sun.jersey/jersey-client/bundles/jersey-client-1.9.jar:/home/moo/.ivy2/cache/com.ning/compress-lzf/bundles/compress-lzf-1.0.3.jar:/home/moo/.ivy2/cache/com.nimbusds/nimbus-jose-jwt/jars/nimbus-jose-jwt-4.41.1.jar:/home/moo/.ivy2/cache/com.lmax/disruptor/jars/disruptor-3.3.0.jar:/home/moo/.ivy2/cache/com.jcraft/jsch/jars/jsch-0.1.54.jar:/home/moo/.ivy2/cache/com.jamesmurty.utils/java-xmlbuilder/jars/java-xmlbuilder-1.1.jar:/home/moo/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/moo/.ivy2/cache/com.google.inject.extensions/guice-servlet/jars/guice-servlet-3.0.jar:/home/moo/.ivy2/cache/com.google.inject/guice/jars/guice-3.0.jar:/home/moo/.ivy2/cache/com.google.guava/guava/jars/guava-11.0.2.jar:/home/moo/.ivy2/cache/com.google.code.gson/gson/jars/gson-2.2.4.jar:/home/moo/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.2.jar:/home/moo/.ivy2/cache/com.github.stephenc.jcip/jcip-annotations/jars/jcip-annotations-1.0-1.jar:/home/moo/.ivy2/cache/com.github.stephenc.findbugs/findbugs-annotations/jars/findbugs-annotations-1.3.9-1.jar:/home/moo/.ivy2/cache/com.github.luben/zstd-jni/bundles/zstd-jni-1.3.2-2.jar:/home/moo/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-scala_2.11/bundles/jackson-module-scala_2.11-2.6.7.1.jar:/home/moo/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-paranamer/bundles/jackson-module-paranamer-2.7.9.jar:/home/moo/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.6.7.1.jar:/home/moo/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.9.jar:/home/moo/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.6.7.jar:/home/moo/.ivy2/cache/com.esotericsoftware/minlog/bundles/minlog-1.3.0.jar:/home/moo/.ivy2/cache/com.esotericsoftware/kryo-shaded/bundles/kryo-shaded-3.0.3.jar:/home/moo/.ivy2/cache/com.clearspring.analytics/stream/jars/stream-2.7.0.jar:/home/moo/.ivy2/cache/com.carrotsearch/hppc/bundles/hppc-0.7.2.jar:/home/moo/.ivy2/cache/asm/asm/jars/asm-3.1.jar:/opt/idea-IC-182.4505.22/lib/idea_rt.jar:/opt/idea-IC-182.4505.22/lib/rt/debugger-agent.jar
+18/11/30 15:21:32 INFO ZooKeeper: Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+18/11/30 15:21:32 INFO ZooKeeper: Client environment:java.io.tmpdir=/tmp
+18/11/30 15:21:32 INFO ZooKeeper: Client environment:java.compiler=<NA>
+18/11/30 15:21:32 INFO ZooKeeper: Client environment:os.name=Linux
+18/11/30 15:21:32 INFO ZooKeeper: Client environment:os.arch=amd64
+18/11/30 15:21:32 INFO ZooKeeper: Client environment:os.version=4.15.0-36-generic
+18/11/30 15:21:32 INFO ZooKeeper: Client environment:user.name=moo
+18/11/30 15:21:32 INFO ZooKeeper: Client environment:user.home=/home/moo
+18/11/30 15:21:32 INFO ZooKeeper: Client environment:user.dir=/home/moo/Git/Big-Hero/UploadHbase
+18/11/30 15:21:32 INFO ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=90000 watcher=org.apache.hadoop.hbase.zookeeper.PendingWatcher@1b409a79
+18/11/30 15:21:32 INFO ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+18/11/30 15:21:32 INFO ClientCnxn: Socket connection established to localhost/127.0.0.1:2181, initiating session
+18/11/30 15:21:32 INFO ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x16765d494170017, negotiated timeout = 40000
+18/11/30 15:21:33 INFO root: droping original table dblp
+18/11/30 15:21:33 INFO HBaseAdmin: Started disable of dblp
+18/11/30 15:21:35 INFO HBaseAdmin: Disabled dblp
+18/11/30 15:21:36 INFO HBaseAdmin: Deleted dblp
+18/11/30 15:21:36 INFO root: creating table dblp on hbase
+18/11/30 15:21:38 INFO HBaseAdmin: Created dblp
+18/11/30 15:21:38 INFO FileInputFormat: Total input files to process : 1
+18/11/30 15:21:38 INFO SparkContext: Starting job: foreachPartition at UploadHbaseMain.scala:67
+18/11/30 15:21:38 INFO DAGScheduler: Got job 0 (foreachPartition at UploadHbaseMain.scala:67) with 25 output partitions
+18/11/30 15:21:38 INFO DAGScheduler: Final stage: ResultStage 0 (foreachPartition at UploadHbaseMain.scala:67)
+18/11/30 15:21:38 INFO DAGScheduler: Parents of final stage: List()
+18/11/30 15:21:38 INFO DAGScheduler: Missing parents: List()
+18/11/30 15:21:38 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[4] at filter at UploadHbaseMain.scala:37), which has no missing parents
+18/11/30 15:21:38 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 3.3 KB, free 870.6 MB)
+18/11/30 15:21:38 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 1947.0 B, free 870.6 MB)
+18/11/30 15:21:38 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.110.102.85:42477 (size: 1947.0 B, free: 870.9 MB)
+18/11/30 15:21:38 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1039
+18/11/30 15:21:38 INFO DAGScheduler: Submitting 25 missing tasks from ResultStage 0 (MapPartitionsRDD[4] at filter at UploadHbaseMain.scala:37) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+18/11/30 15:21:38 INFO TaskSchedulerImpl: Adding task set 0.0 with 25 tasks
+18/11/30 15:21:38 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:21:38 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, localhost, executor driver, partition 1, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:21:39 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2, localhost, executor driver, partition 2, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:21:39 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3, localhost, executor driver, partition 3, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:21:39 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+18/11/30 15:21:39 INFO Executor: Running task 3.0 in stage 0.0 (TID 3)
+18/11/30 15:21:39 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+18/11/30 15:21:39 INFO Executor: Running task 2.0 in stage 0.0 (TID 2)
+18/11/30 15:21:39 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:0+33554432
+18/11/30 15:21:39 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:33554432+33554432
+18/11/30 15:21:39 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:100663296+33554432
+18/11/30 15:21:39 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:67108864+33554432
+18/11/30 15:22:33 INFO Executor: Finished task 3.0 in stage 0.0 (TID 3). 837 bytes result sent to driver
+18/11/30 15:22:33 INFO TaskSetManager: Starting task 4.0 in stage 0.0 (TID 4, localhost, executor driver, partition 4, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:22:33 INFO Executor: Running task 4.0 in stage 0.0 (TID 4)
+18/11/30 15:22:33 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:134217728+33554432
+18/11/30 15:22:34 INFO TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 54995 ms on localhost (executor driver) (1/25)
+18/11/30 15:22:34 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 837 bytes result sent to driver
+18/11/30 15:22:34 INFO TaskSetManager: Starting task 5.0 in stage 0.0 (TID 5, localhost, executor driver, partition 5, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:22:34 INFO Executor: Running task 5.0 in stage 0.0 (TID 5)
+18/11/30 15:22:34 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 55021 ms on localhost (executor driver) (2/25)
+18/11/30 15:22:34 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:167772160+33554432
+18/11/30 15:22:34 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 837 bytes result sent to driver
+18/11/30 15:22:34 INFO TaskSetManager: Starting task 6.0 in stage 0.0 (TID 6, localhost, executor driver, partition 6, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:22:34 INFO Executor: Running task 6.0 in stage 0.0 (TID 6)
+18/11/30 15:22:34 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:201326592+33554432
+18/11/30 15:22:34 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 55631 ms on localhost (executor driver) (3/25)
+18/11/30 15:22:34 INFO Executor: Finished task 2.0 in stage 0.0 (TID 2). 837 bytes result sent to driver
+18/11/30 15:22:34 INFO TaskSetManager: Starting task 7.0 in stage 0.0 (TID 7, localhost, executor driver, partition 7, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:22:34 INFO Executor: Running task 7.0 in stage 0.0 (TID 7)
+18/11/30 15:22:34 INFO TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 55589 ms on localhost (executor driver) (4/25)
+18/11/30 15:22:34 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:234881024+33554432
+18/11/30 15:23:29 INFO Executor: Finished task 7.0 in stage 0.0 (TID 7). 837 bytes result sent to driver
+18/11/30 15:23:29 INFO TaskSetManager: Starting task 8.0 in stage 0.0 (TID 8, localhost, executor driver, partition 8, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:23:29 INFO TaskSetManager: Finished task 7.0 in stage 0.0 (TID 7) in 54938 ms on localhost (executor driver) (5/25)
+18/11/30 15:23:29 INFO Executor: Running task 8.0 in stage 0.0 (TID 8)
+18/11/30 15:23:29 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:268435456+33554432
+18/11/30 15:23:29 INFO Executor: Finished task 6.0 in stage 0.0 (TID 6). 837 bytes result sent to driver
+18/11/30 15:23:29 INFO TaskSetManager: Starting task 9.0 in stage 0.0 (TID 9, localhost, executor driver, partition 9, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:23:29 INFO TaskSetManager: Finished task 6.0 in stage 0.0 (TID 6) in 55037 ms on localhost (executor driver) (6/25)
+18/11/30 15:23:29 INFO Executor: Running task 9.0 in stage 0.0 (TID 9)
+18/11/30 15:23:29 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:301989888+33554432
+18/11/30 15:23:29 INFO Executor: Finished task 4.0 in stage 0.0 (TID 4). 837 bytes result sent to driver
+18/11/30 15:23:29 INFO TaskSetManager: Starting task 10.0 in stage 0.0 (TID 10, localhost, executor driver, partition 10, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:23:29 INFO TaskSetManager: Finished task 4.0 in stage 0.0 (TID 4) in 55760 ms on localhost (executor driver) (7/25)
+18/11/30 15:23:29 INFO Executor: Running task 10.0 in stage 0.0 (TID 10)
+18/11/30 15:23:29 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:335544320+33554432
+18/11/30 15:23:30 INFO Executor: Finished task 5.0 in stage 0.0 (TID 5). 837 bytes result sent to driver
+18/11/30 15:23:30 INFO TaskSetManager: Starting task 11.0 in stage 0.0 (TID 11, localhost, executor driver, partition 11, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:23:30 INFO TaskSetManager: Finished task 5.0 in stage 0.0 (TID 5) in 56122 ms on localhost (executor driver) (8/25)
+18/11/30 15:23:30 INFO Executor: Running task 11.0 in stage 0.0 (TID 11)
+18/11/30 15:23:30 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:369098752+33554432
+18/11/30 15:24:15 INFO Executor: Finished task 10.0 in stage 0.0 (TID 10). 837 bytes result sent to driver
+18/11/30 15:24:15 INFO TaskSetManager: Starting task 12.0 in stage 0.0 (TID 12, localhost, executor driver, partition 12, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:24:15 INFO TaskSetManager: Finished task 10.0 in stage 0.0 (TID 10) in 45494 ms on localhost (executor driver) (9/25)
+18/11/30 15:24:15 INFO Executor: Running task 12.0 in stage 0.0 (TID 12)
+18/11/30 15:24:15 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:402653184+33554432
+18/11/30 15:24:15 INFO Executor: Finished task 8.0 in stage 0.0 (TID 8). 837 bytes result sent to driver
+18/11/30 15:24:15 INFO TaskSetManager: Starting task 13.0 in stage 0.0 (TID 13, localhost, executor driver, partition 13, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:24:15 INFO TaskSetManager: Finished task 8.0 in stage 0.0 (TID 8) in 45952 ms on localhost (executor driver) (10/25)
+18/11/30 15:24:15 INFO Executor: Running task 13.0 in stage 0.0 (TID 13)
+18/11/30 15:24:15 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:436207616+33554432
+18/11/30 15:24:15 INFO Executor: Finished task 11.0 in stage 0.0 (TID 11). 837 bytes result sent to driver
+18/11/30 15:24:15 INFO TaskSetManager: Starting task 14.0 in stage 0.0 (TID 14, localhost, executor driver, partition 14, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:24:15 INFO Executor: Running task 14.0 in stage 0.0 (TID 14)
+18/11/30 15:24:15 INFO TaskSetManager: Finished task 11.0 in stage 0.0 (TID 11) in 45853 ms on localhost (executor driver) (11/25)
+18/11/30 15:24:15 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:469762048+33554432
+18/11/30 15:24:17 INFO Executor: Finished task 9.0 in stage 0.0 (TID 9). 837 bytes result sent to driver
+18/11/30 15:24:17 INFO TaskSetManager: Starting task 15.0 in stage 0.0 (TID 15, localhost, executor driver, partition 15, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:24:17 INFO TaskSetManager: Finished task 9.0 in stage 0.0 (TID 9) in 47465 ms on localhost (executor driver) (12/25)
+18/11/30 15:24:17 INFO Executor: Running task 15.0 in stage 0.0 (TID 15)
+18/11/30 15:24:17 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:503316480+33554432
+18/11/30 15:24:59 INFO Executor: Finished task 12.0 in stage 0.0 (TID 12). 837 bytes result sent to driver
+18/11/30 15:24:59 INFO TaskSetManager: Starting task 16.0 in stage 0.0 (TID 16, localhost, executor driver, partition 16, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:24:59 INFO Executor: Running task 16.0 in stage 0.0 (TID 16)
+18/11/30 15:24:59 INFO TaskSetManager: Finished task 12.0 in stage 0.0 (TID 12) in 44772 ms on localhost (executor driver) (13/25)
+18/11/30 15:24:59 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:536870912+33554432
+18/11/30 15:25:02 INFO Executor: Finished task 15.0 in stage 0.0 (TID 15). 837 bytes result sent to driver
+18/11/30 15:25:02 INFO TaskSetManager: Starting task 17.0 in stage 0.0 (TID 17, localhost, executor driver, partition 17, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:25:02 INFO TaskSetManager: Finished task 15.0 in stage 0.0 (TID 15) in 45132 ms on localhost (executor driver) (14/25)
+18/11/30 15:25:02 INFO Executor: Running task 17.0 in stage 0.0 (TID 17)
+18/11/30 15:25:02 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:570425344+33554432
+18/11/30 15:25:02 INFO Executor: Finished task 14.0 in stage 0.0 (TID 14). 837 bytes result sent to driver
+18/11/30 15:25:02 INFO TaskSetManager: Starting task 18.0 in stage 0.0 (TID 18, localhost, executor driver, partition 18, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:25:02 INFO Executor: Running task 18.0 in stage 0.0 (TID 18)
+18/11/30 15:25:02 INFO TaskSetManager: Finished task 14.0 in stage 0.0 (TID 14) in 46255 ms on localhost (executor driver) (15/25)
+18/11/30 15:25:02 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:603979776+33554432
+18/11/30 15:25:02 INFO Executor: Finished task 13.0 in stage 0.0 (TID 13). 837 bytes result sent to driver
+18/11/30 15:25:02 INFO TaskSetManager: Starting task 19.0 in stage 0.0 (TID 19, localhost, executor driver, partition 19, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:25:02 INFO Executor: Running task 19.0 in stage 0.0 (TID 19)
+18/11/30 15:25:02 INFO TaskSetManager: Finished task 13.0 in stage 0.0 (TID 13) in 46833 ms on localhost (executor driver) (16/25)
+18/11/30 15:25:02 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:637534208+33554432
+18/11/30 15:25:32 INFO AbstractRpcClient: Cleanup idle connection to moo-Inspiron-7560/127.0.1.1:38449
+18/11/30 15:25:55 INFO Executor: Finished task 16.0 in stage 0.0 (TID 16). 837 bytes result sent to driver
+18/11/30 15:25:55 INFO TaskSetManager: Starting task 20.0 in stage 0.0 (TID 20, localhost, executor driver, partition 20, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:25:55 INFO TaskSetManager: Finished task 16.0 in stage 0.0 (TID 16) in 56017 ms on localhost (executor driver) (17/25)
+18/11/30 15:25:55 INFO Executor: Running task 20.0 in stage 0.0 (TID 20)
+18/11/30 15:25:55 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:671088640+33554432
+18/11/30 15:25:56 INFO Executor: Finished task 18.0 in stage 0.0 (TID 18). 837 bytes result sent to driver
+18/11/30 15:25:56 INFO TaskSetManager: Starting task 21.0 in stage 0.0 (TID 21, localhost, executor driver, partition 21, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:25:56 INFO Executor: Running task 21.0 in stage 0.0 (TID 21)
+18/11/30 15:25:56 INFO TaskSetManager: Finished task 18.0 in stage 0.0 (TID 18) in 54146 ms on localhost (executor driver) (18/25)
+18/11/30 15:25:56 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:704643072+33554432
+18/11/30 15:25:57 INFO Executor: Finished task 19.0 in stage 0.0 (TID 19). 837 bytes result sent to driver
+18/11/30 15:25:57 INFO TaskSetManager: Starting task 22.0 in stage 0.0 (TID 22, localhost, executor driver, partition 22, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:25:57 INFO TaskSetManager: Finished task 19.0 in stage 0.0 (TID 19) in 55660 ms on localhost (executor driver) (19/25)
+18/11/30 15:25:57 INFO Executor: Running task 22.0 in stage 0.0 (TID 22)
+18/11/30 15:25:57 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:738197504+33554432
+18/11/30 15:25:58 INFO Executor: Finished task 17.0 in stage 0.0 (TID 17). 837 bytes result sent to driver
+18/11/30 15:25:58 INFO TaskSetManager: Starting task 23.0 in stage 0.0 (TID 23, localhost, executor driver, partition 23, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:25:58 INFO Executor: Running task 23.0 in stage 0.0 (TID 23)
+18/11/30 15:25:58 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:771751936+33554432
+18/11/30 15:25:58 INFO TaskSetManager: Finished task 17.0 in stage 0.0 (TID 17) in 56474 ms on localhost (executor driver) (20/25)
+18/11/30 15:26:55 INFO Executor: Finished task 20.0 in stage 0.0 (TID 20). 837 bytes result sent to driver
+18/11/30 15:26:55 INFO TaskSetManager: Starting task 24.0 in stage 0.0 (TID 24, localhost, executor driver, partition 24, PROCESS_LOCAL, 7943 bytes)
+18/11/30 15:26:55 INFO TaskSetManager: Finished task 20.0 in stage 0.0 (TID 20) in 59183 ms on localhost (executor driver) (21/25)
+18/11/30 15:26:55 INFO Executor: Running task 24.0 in stage 0.0 (TID 24)
+18/11/30 15:26:55 INFO NewHadoopRDD: Input split: file:/home/moo/Git/Big-Hero/UploadHbase/input/dblp.txt:805306368+12278113
+18/11/30 15:26:55 INFO Executor: Finished task 21.0 in stage 0.0 (TID 21). 837 bytes result sent to driver
+18/11/30 15:26:55 INFO TaskSetManager: Finished task 21.0 in stage 0.0 (TID 21) in 59347 ms on localhost (executor driver) (22/25)
+18/11/30 15:26:56 INFO Executor: Finished task 22.0 in stage 0.0 (TID 22). 837 bytes result sent to driver
+18/11/30 15:26:56 INFO TaskSetManager: Finished task 22.0 in stage 0.0 (TID 22) in 58610 ms on localhost (executor driver) (23/25)
+18/11/30 15:26:57 INFO Executor: Finished task 23.0 in stage 0.0 (TID 23). 794 bytes result sent to driver
+18/11/30 15:26:57 INFO TaskSetManager: Finished task 23.0 in stage 0.0 (TID 23) in 59042 ms on localhost (executor driver) (24/25)
+18/11/30 15:27:04 INFO Executor: Finished task 24.0 in stage 0.0 (TID 24). 837 bytes result sent to driver
+18/11/30 15:27:04 INFO TaskSetManager: Finished task 24.0 in stage 0.0 (TID 24) in 9546 ms on localhost (executor driver) (25/25)
+18/11/30 15:27:04 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+18/11/30 15:27:04 INFO DAGScheduler: ResultStage 0 (foreachPartition at UploadHbaseMain.scala:67) finished in 325.954 s
+18/11/30 15:27:04 INFO DAGScheduler: Job 0 finished: foreachPartition at UploadHbaseMain.scala:67, took 326.353569 s
+18/11/30 15:27:05 INFO SparkContext: Invoking stop() from shutdown hook
+18/11/30 15:27:05 INFO SparkUI: Stopped Spark web UI at http://10.110.102.85:4040
+18/11/30 15:27:05 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+18/11/30 15:27:05 INFO MemoryStore: MemoryStore cleared
+18/11/30 15:27:05 INFO BlockManager: BlockManager stopped
+18/11/30 15:27:05 INFO BlockManagerMaster: BlockManagerMaster stopped
+18/11/30 15:27:05 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+18/11/30 15:27:05 INFO SparkContext: Successfully stopped SparkContext
+18/11/30 15:27:05 INFO ShutdownHookManager: Shutdown hook called
+18/11/30 15:27:05 INFO ShutdownHookManager: Deleting directory /tmp/spark-9b7b2419-916a-4113-8c51-d449b6a12745
